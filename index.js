@@ -2,6 +2,8 @@ var express = require("express"); //requiring express module
 var app = express(); //creating express instance
 var querystring = require('querystring');
 const axios = require('axios');
+const PORT = process.env.PORT || 5000
+
 
 
 
@@ -38,7 +40,7 @@ try {
         });
 
 
-app.listen(3000, function() {
+app.listen(PORT, function() {
  console.log("Node server is running..");
 });
 
